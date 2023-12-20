@@ -1,0 +1,523 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
+
+/* Universal indicators and Boilerplates */
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Georgia', serif;
+    
+    box-sizing: border-box;     
+    user-select: none;
+
+}
+
+.flex{
+    display: flex;
+}
+/* /Universal indicators and Boilerplates */
+/* first  section */
+.landing{
+    background-color: black;
+}
+#Herobox, .landing{
+    height: 100vh;
+
+    min-height: fit-content;
+  
+    position: relative;
+}
+/* Nav */
+.navbar-brand{
+    font-family: 'Anton', sans-serif;
+}
+.rule{
+    height: 1vh;
+    background-color: whitesmoke;
+    border-radius: 30%;
+}
+/* /Nav */
+/* Hero Intro section for texts and buttons */
+h1{
+    font-family: 'Lucida Fax', serif;
+    font-weight: 700; 
+    line-height: 2;   
+    font-size: 4rem;
+}
+
+.texts{
+    padding-top: 10vh;
+
+}
+.intro-text{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2.5rem;
+   
+    
+}
+.intro-tag{
+    font-family: 'PT Serif', serif;
+    font-size: 1rem;
+}
+.cta-buttons{
+    display: flex;
+    justify-content: space-between;
+    max-width: 50%;
+}
+.cta-btns2{
+   display: flex;
+   justify-content: space-between;
+}
+.cta-JOT{
+    width: 11vw;
+}
+.cta-JOT, .cta-SOP{
+    justify-content: space-around;
+}
+.cta-learn, .cta-JOT{
+    text-align: center;
+    width: fit-content;
+        min-width: 10vw;
+        height: 48px;
+        max-height: fit-content;
+        background-color: #8B0000;
+        border: none;
+        color: white;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        transition-duration: none;
+        cursor: pointer;
+    }
+    
+    .cta-learn:hover,.cta-JOT:hover {
+        background-color: #FED9D9;
+        color: black;
+    }
+
+.cta-GIT, .cta-SOP{
+       text-align: center;
+        min-width: 10vw;
+        
+        height: 48px;
+        background-color: black;
+        color: white;
+        border: 2px solid white;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        transition-duration: 0.4s;
+        cursor: pointer;
+    }
+    
+    .cta-GIT:hover, .cta-SOP:hover {
+        background-color: #FED9D9;
+        color: black;
+}
+/* /Hero Intro section for texts and buttons */
+/* images and svg in carousel Hero Intro section */
+.phone{
+display: flex;
+justify-content: space-around;
+}
+.phone-image{
+   min-width: 20vw;
+   min-height: 30vh;
+   height: 50vh;
+   padding-left: 10vw;
+   position: relative;
+   top: 10vh;
+   z-index: 2;
+   padding: 10vh auto;
+}
+.svg-image{
+    height: max-content;
+    width: max-content;
+}
+/* /images and svg in carousel Hero Intro section */
+/* quote at bottom */
+.quote{
+   
+    padding-top: 4vh;
+   margin: 2% auto;
+   max-width: 50vw; 
+   flex-direction: column   ;
+   padding-bottom: auto;
+}
+.quote2{
+    padding-top: 5vh;
+}
+
+.quoter{
+    text-align: right;
+    padding-right: 15%;
+}
+/* /quote at bottom */
+/* Carousel buttons for edge positioning */
+.preview, .next{
+    width: 10%;
+  height: 10%;
+  display: flex;
+}
+.preview{
+    position: relative;
+    bottom: 65vh;
+    left:2vw;
+    
+}
+.next{
+    position: relative;
+    bottom: 75vh;
+    left: 85vw;
+
+}
+/* /Carousel buttons for edge positioning */
+/* media query for iPad view */
+@media (max-width:769px) (min-width:764px) {
+    .texts{
+        text-align: center;
+    }
+    .phone-image{
+        position: absolute;
+        visibility: hidden;
+    }
+    
+    
+    
+}
+@media (max-width: 1200px) {
+    .cta-btns2{
+        min-width: 300px;
+    }
+}
+
+
+@media (max-width: 766px)  {
+    .texts{
+        text-align: center;
+    }
+    .phone-image{
+        position: absolute;
+        visibility: hidden;
+    }
+    .landing{
+        height: 110vh;
+    }
+    *{
+     
+        
+        line-height: 2;
+    }
+    .intro-text{
+        font-size: 2rem   ;
+    }
+    .cta-buttons{
+       
+        padding: 1vh, auto;
+        display: flex;
+        justify-content: space-around;
+        max-width: 100vw;
+        min-width: fit-content;
+        min-height: fit-content;
+    }
+}  
+/* /media query for phone view */
+/* /first section */
+
+/* Pitch section */
+#pitch{
+    background-color: #FED9D9;
+    min-height: 720px;
+}
+.pitch-rows{
+    padding: 10vh 0;
+    justify-content: space-around;
+}
+.pitch-row{
+    padding: 0 5vw;
+}
+h2{
+    font-family: 'Lucida Fax', serif;
+    font-weight: 700; 
+    line-height: 2;   
+    font-size: 3rem;
+   position: relative;
+   top: 5vh;
+   justify-content: center;
+}
+.pitch-text{
+    padding: 3vh 0;
+    
+    font-family: 'Lucida Fax' serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+.text-left{
+    text-align: left;
+}
+
+/* Staff section */
+.staff-back{
+    width: 100%;
+    min-height: fit-content;
+    
+    max-height: 720px; 
+    background: cover;
+}
+.staff {
+    position: relative;
+    width: 100%;
+    min-height: fit-content;
+    
+    max-height: 720px; 
+    background-image: url('images/AptraceLogo.png');
+  
+    background-size: cover;
+    color: white; /* Text color */
+  }
+.blur-face{
+    width: 100%;
+    min-height: fit-content;
+    
+    max-height: 720px; 
+    background-color: black;
+    opacity: 70%;
+    filter: blur(3px);
+    filter: brightness(70%);
+    background: cover;
+    overflow: hidden;
+    
+}
+h3{
+    font-family: 'Lucida Fax', serif;
+    font-size: 1rem;
+    font-family: 400;
+  
+}
+h5{
+    font-family: Georgia, serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.side-head{ 
+    position: relative;
+    width: fit-content;
+    left: 6.5vw;
+    top: 2vh;
+    justify-content: space-between;
+   }
+.my-pfp{
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    position: relative;
+    
+}
+.staff-box{
+    margin: 15vh auto;
+   
+}
+.staff-head{
+    margin: 0 auto;
+}
+.floated{
+    padding-top: 3vh;
+    
+}
+.staff-info{
+   
+    height: fit-content;
+  
+}
+h4{
+    font-family: 'Lucida Fax' , serif;
+    font-weight: 400;
+   
+}
+.img-div{
+    display: flex;
+    justify-content: space-around;
+}
+/* /Staff section close */
+.Email{
+    background-color:   #FED9D9;
+   
+    min-height: fit-content;
+}
+.Email-row{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+.email-text{
+    color:#8B0000;
+}
+
+.submit-btn{
+    padding-top: 2vh;
+}
+.submit:hover{
+    background-color:#D78484 ;
+}
+.btc{
+    padding-left: 0;
+}
+/* /Email section close */
+
+/* Projects section */
+#Projects{
+    background: linear-gradient(to right, #282828, #1F1F1F);
+    height:fit-content;
+}
+.project-split{
+    width: 100vw;
+}
+.projector{
+    
+    width: 100%;
+   
+}
+.project-img{
+    padding: 0%;
+        width: 100%; /* Set the width of the container */
+        min-height: 390px; /* Set the height of the container */
+        background-image: url('images/Androiddmockup.png');
+        background-size: cover;
+        margin: 0 auto;
+        background-repeat: no-repeat;
+        background-position: left; /* Center the background image */
+      }
+.pro-text{
+    font-family: Georgia,  serif;
+    font-weight: 400;
+    font-size: 0.8rem;
+    color: white;;
+}
+.prop-text{
+    padding-top: 10vh;
+    
+    padding-left: 7vw;
+    text-align: left;
+}
+@media (max-width: 992){
+    .project-split{
+       
+       display: flex;
+       justify-content: center;
+       flex-direction: row;
+    }
+}
+/* /Project section close */
+
+/* Footer section */
+#footer{
+    
+    display: flex;
+    min-height: fit-content;
+    max-width: 100vw;
+    overflow: hidden;
+    background-color: black;
+}
+.dfoot{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.tiny-text{
+    font-size: 0.7rem;
+    color: white;
+}
+.foot-submit{
+    text-align: center;
+    width: 7vw;
+       min-width: fit-content;
+        height: 32px;
+        max-height: fit-content;
+        background-color: #8B0000;
+        border: none;
+        color: white;
+        text-align: center;
+        display: inline-block;
+        font-size: 16px;
+        transition-duration: none;
+        cursor: pointer;
+       
+}
+.foot-mailbox{
+    height: 32px;
+    border-radius: 0%;
+}
+.foot-mail{
+    flex-direction: column;
+}
+.foot22{
+    justify-content: space-around;
+    padding-top: 10vh;
+    
+}
+.footag{
+    padding-top: 15vh;
+}
+
+/* /Footer section close */
+
+/* Manifest Counter section */
+#Counter{
+    width: 45vw;
+height:18vh;
+background-color: #8B0000;
+position: relative;
+
+left: 27vw;
+min-width: fit-content;
+
+
+}
+.Counter{
+    background: linear-gradient(to bottom, black, #FED9D9);
+    position: static;
+}
+.Manifest{
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+}
+.m1, .m2, .m3 {
+    padding-top: 2.5vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width:700px){
+    .countext{
+        font-size: 0.4rem;
+    }
+    #counter{
+        
+        height: 15vh;
+
+    }
+    .Counter{
+        padding-top: 10vh;
+        padding-bottom: 5vh;
+    }
+   
+}
+@media (max-width:450px) {
+    #counter{
+        height: 12vh;
+    }
+    .counting{
+        font-size: 1.4rem;
+    }
+    .countext{
+        font-size: 0.3rem;
+    }
+    .Counter{
+        padding-top: 12vh;
+        padding-bottom: 5vh;
+    }
+}
